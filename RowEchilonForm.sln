@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RowEchilonForm", "RowEchilonForm.csproj", "{7A5F3915-D99C-4033-B737-5C5D69CF175D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A5F3915-D99C-4033-B737-5C5D69CF175D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5F3915-D99C-4033-B737-5C5D69CF175D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5F3915-D99C-4033-B737-5C5D69CF175D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5F3915-D99C-4033-B737-5C5D69CF175D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52B8A0DA-8CAD-4A6F-A496-CA363F008237}
+	EndGlobalSection
+EndGlobal
