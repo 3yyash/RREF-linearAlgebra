@@ -1,0 +1,204 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    caret-color: #482B6B;
+    transition: .3s;
+}
+body {
+    background: linear-gradient(-45deg, #0C0711, #241535, #482B6B, #241535, #0C0711);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+header.heading {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #222b;
+    border-bottom: 2px solid #aaa;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 1px 5px #fff5;
+}
+.main-container {
+    background: #0008;
+    width: 70vw;
+    border-radius: 20px;
+    overflow: hidden;
+    width: fit-content;
+    box-shadow: 0 0 30px #fff3;
+    margin: 40px;
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+}
+.main-container form {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    border: blueviolet solid 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+}
+.main-container .eq-container {
+    flex-direction: column;
+    flex-grow: 1;
+}
+.main-container .number-sec {
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: max-content;
+    gap: 10px;
+}
+.main-container .number-sec .number-controls {
+    background: #482B6B30;
+    border-radius: 2.5ch;
+    padding: 5px 20px;
+    height: 4ch;
+    box-shadow: 0 0 10px #fff3;
+    margin: 0 50px;
+}
+.number-sec .number-controls input {
+    cursor: pointer;
+}
+fieldset.line {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 0 10px;
+}
+var, .result-container {
+    font-family: serif;
+}
+.result-container {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    /* animation: drop-solution .5s ease-in; */
+}
+input {
+    border: none;
+    background: #482B6B3f;
+    min-height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 5ch;
+    height: 5ch;
+    text-align: center;
+}
+input:focus {
+    outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    box-shadow: 0 0 0 #fff0;
+}
+::before {
+    margin-left: 5px;
+    font-weight: bolder;
+}
+.lines-container .line .eq-result {
+    border-left: 2px dashed #482B6B;
+    margin-left: 5px;
+}
+.line .var-card:not(:first-child)::before { content: "+"; }
+.lines-container .line .eq-result:last-child::before { content: "="; }
+input:focus, select:focus {
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 3px #fffa;
+}
+.result-container strong {
+    color: blueviolet;
+    text-shadow: 0 0 3px blueviolet;
+    margin-right: 10px;
+}
+footer.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    background: #222b;
+    border-top: 2px solid #aaa;
+    color: #fff;
+    box-shadow: 0 -1px 5px #fff5;
+
+}
+.footer .authors ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    align-items: baseline;
+}
+.footer span {
+    color: #482B6B;
+    text-shadow: 0 0 5px #482B6B;
+    font-size: 20px;
+}
+.authors ul li {
+    list-style-type: none;
+}
+.authors ul li:not(:last-child) {
+    border-right: 2px solid #482B6B;
+    padding-right: 15px;
+}
+.eq-container button#solve {
+    display: flex;
+    background: blueviolet;
+    border: 0;
+    height: 30px;
+    padding: 0 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 7px blueviolet;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.eq-container button#solve svg {
+    height: 16px;
+    fill: currentColor;
+}
+.eq-container button#solve:hover {
+    color: blueviolet;
+    background: #fff;
+    margin-right: 5px;
+    text-shadow: 0 0 5px blueviolet;
+    box-shadow: 0 0 7px #fff;
+    transform: scale(1.2);
+}
+.eq-container button#solve:hover svg {
+    fill: blueviolet;
+    transform: translateX(7px);
+}
+@keyframes drop-solution {
+    from {
+        height: 0;
+        padding: 0;
+    }
+    to {
+        height: 20px;
+        padding: 10px;
+    }
+}
