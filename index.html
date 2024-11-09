@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINALG Task</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="heading">Solving Matrices</header>
+    
+    <article class="main-container">
+        <form>
+            <fieldset class="form-card number-sec">
+                <div>
+                    <label for="vars">Enter The Number of Variables:</label>
+                    <input required type="number" id="vars" min="2" value="3" onchange="updateVarsNumber()" />
+                </div>
+                <div class="number-controls">
+                    <input type="button" value="-" onclick="decreaseVars()" />
+                    <input type="button" value="+" onclick="increaseVars()" />
+                </div>
+            </fieldset>
+            <fieldset class="form-card eq-container">
+                <div class="lines-container">
+                    <!-- <fieldset class="line">
+                        <div class="var-card">
+                            <input autofocus required type="number" id="var1-1" />
+                            <label for="var1-1"><var>x<sub>1</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var2-1" />
+                            <label for="var2-1"><var>x<sub>2</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var3-1" />
+                            <label for="var3-1"><var>x<sub>3</sub></var></label>
+                        </div>
+                        <div class="eq-result">
+                            <input required type="number" id="res1">
+                        </div>
+                    </fieldset>
+                    <fieldset class="line">
+                        <div class="var-card">
+                            <input required type="number" id="var1-2" />
+                            <label for="var1-2"><var>x<sub>1</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var2-2" />
+                            <label for="var2-2"><var>x<sub>2</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var3-2" />
+                            <label for="var3-2"><var>x<sub>3</sub></var></label>
+                        </div>
+                        <div class="eq-result">
+                            <input required type="number" id="res2">
+                        </div>
+                    </fieldset>
+                    <fieldset class="line">
+                        <div class="var-card">
+                            <input required type="number" id="var1-3" />
+                            <label for="var1-3"><var>x<sub>1</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var2-3" />
+                            <label for="var2-3"><var>x<sub>2</sub></var></label>
+                        </div>
+                        <div class="var-card">
+                            <input required type="number" id="var3-3" />
+                            <label for="var3-3"><var>x<sub>3</sub></var></label>
+                        </div>
+                        <div class="eq-result">
+                            <input required type="number" id="res3">
+                        </div>
+                    </fieldset> -->
+                </div>
+                <button id="solve" onclick="calculateMatrix()">
+                    Solve
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+                </button>
+            </fieldset>
+            <fieldset class="result-container">
+                <strong>Solution: </strong>
+                <span class="solution">
+                    <!-- <var>x<sub>1</sub></var> = 30,&nbsp;
+                    <var>x<sub>2</sub></var> = 15,&nbsp;
+                    <var>x<sub>3</sub></var> = 29 -->
+                </span>
+            </fieldset>
+        </form>
+    </article>
+    <footer class="footer">
+        <aside class="copy">
+            Copyrights<sup><span>&copy;</span></sup> 2024 - <span>Tamooh</span> Team
+        </aside>
+        <aside class="authors">
+            <ul>
+                <span>Authors:</span>
+                <li>Wafaa Ebrahim</li>
+                <li>Yahya Mahmoud</li>
+                <li>Yasin Samy</li>
+            </ul>
+        </aside>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
